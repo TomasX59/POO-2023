@@ -6,7 +6,7 @@ public class DateYMD {
             
     static Scanner sc = new Scanner(System.in);
     private int day, month, year;
-    public DateYMD(int day2, int month2, int year2) {
+    public DateYMD(int dia, int mes, int ano) {
     }
 
     public static void main(String[] args) {
@@ -110,7 +110,7 @@ public class DateYMD {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
     }
 
-    public boolean valid(int day, int month, int year) {
+    public static boolean valid(int day, int month, int year) {
         return validMonth(month) && day >= 1 && day <= monthDays(month, year);
     }
 
